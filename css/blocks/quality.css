@@ -1,0 +1,87 @@
+.quality {
+   padding: 103px 0 100px;
+}
+.quality__container {
+    display: flex;
+    gap: 220px;
+    border-bottom: 1px solid #cbcbcb;
+    max-width: 1246px;
+    padding-bottom: 100px;
+}
+.quality__left {
+    padding-left: 112px;
+    position: relative;
+}
+.quality__left-img {
+    
+}
+
+.quality__left::after {
+content: "";
+background-image: url(../../img/quality/decor-phone.svg);
+width: 52px;
+height: 62px;
+background-repeat: no-repeat;
+position: absolute;
+top: -5%;
+left: 105%;
+}
+
+.quality__right {
+    max-width: 560px;
+}
+.quality__title {
+    font-weight: 700;
+font-size: 50px;
+line-height: 114%;
+text-transform: capitalize;
+color: #18181b;
+margin-bottom: 63px;
+text-wrap: balance;
+}
+.quality__title--purple {
+    color: #6c5fbc;
+}
+.quality__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 61px;
+    list-style: disc outside;
+padding-left: 30px;
+}
+.quality__item {
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #676767;
+}
+.quality__link {
+    font-weight: 500;
+font-size: 18px;
+line-height: 125%;
+text-align: center;
+text-transform: capitalize;
+color: #fff;
+border-radius: 15px;
+background: #6c5fbc;
+padding: 20px 26px;
+display: inline-flex;
+align-items: center;
+position: relative;
+}
+
+.quality__link-svg {
+
+}
+
+.quality__link::after {
+ content: '';
+  background-image: url(../../img/quality/decor.svg);
+  width: 170px;
+  height: 87px;
+background-repeat: no-repeat;
+position: absolute;
+left: 95%;
+bottom: -70px;
+}

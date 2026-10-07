@@ -1,0 +1,224 @@
+.purshases {
+}
+
+.container {}
+
+.purshases__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.purshases__wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 103px 0 134px;
+}
+.purshases__left {
+    max-width: 560px;
+}
+
+.purshases__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #18181b;
+    margin-bottom: 48px;
+}
+
+.purshases__title--purple {
+    color: #6c5fbc;
+}
+
+.purshases__left-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 345px;
+}
+
+.purshases__left-item {
+    display: flex;
+    gap: 19px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 4px 17px;
+    box-shadow: 0 20px 30px 0 rgba(70, 70, 70, 0.1);
+}
+
+.purshases__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.purshases__item-title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: #323142;
+}
+
+.purshases__left-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #323142;
+}
+
+.purshases__left-text--red {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #f1534e;
+}
+
+.purshases__item-time {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    color: #acadb9;
+    text-align: right;
+}
+
+.purshases__graph {
+    max-width: 534px;
+    width: 100%;
+    padding: 46px 38px;
+    border: 1.57px solid #edf2f7;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+}
+
+.purshases__graph-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.purshases__graph-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #1a202c;
+}
+
+.purshases__graph-select {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: right;
+    color: #1a202c;
+    border-radius: 13px;
+    padding: 12px 18px;
+    background: #fafafa;
+}
+
+.purshases__graph-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.purshases__graph-item {
+    border: 1.57px solid #edf2f7;
+    border-radius: 19px;
+    padding: 25px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.purshases__graph-item--purple::after,
+.purshases__graph-item--purple::before {
+    background: #6c5fbc;
+}
+
+.purshases__graph-item--purple::after {
+    width: 70%;
+}
+
+.purshases__graph-item--orange::after,
+.purshases__graph-item--orange::before {
+    background: #fbad18;
+}
+
+.purshases__graph-item--orange::after {
+    width: 70%;
+}
+
+.purshases__graph-item::after,
+.purshases__graph-item::before {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    border-radius: 79px;
+    height: 9px;
+}
+
+.purshases__graph-item::before {
+    opacity: 0.2;
+}
+
+
+
+.purshases__graph-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.purshases__graph-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purshases__graph-img {}
+
+
+.purshases__graph-about {}
+
+.purshases__graph__item-title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #1a202c;
+}
+
+.purshases__graph-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #a0aec0;
+}
+
+.purshases__graph-price {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: #1a202c;
+    margin-left: auto;
+}
+
+.purshases__graph-item--purple .purshases__graph-icon {
+    background: #f4f0ff;
+}
+
+.purshases__graph-item--orange .purshases__graph-icon {
+    background: #f2fdf6;
+}

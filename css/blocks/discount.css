@@ -1,0 +1,67 @@
+.discount {
+    margin-bottom: 216px;
+}
+
+.discount__wrapper::after {
+    position: absolute;
+    content: '';
+    background-image: url(../../img/discount/img.png);
+    background-repeat: no-repeat;
+    width: 274px;
+    height: 276px;
+    top: 64px;
+    right: 62px;
+    background-size: contain;
+}
+
+.container {}
+
+.discount__wrapper {
+    position: relative;
+    background-image: url(../../img/discount/bg.png);
+    padding: 37px 72px 61px 66px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    background-color: rgba(57, 35, 191, 0.8);
+}
+
+.discount__title {
+    margin-bottom: 9px;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+}
+
+.discount__form {
+    border-radius: 14px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #878787;
+    max-width: 440px;
+    box-shadow: 0 7px 45px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 7px 6px 7px 0;
+}
+
+.discount__input {
+    min-width: 0;
+    border: none;
+    flex: 1;
+    padding: 6px 7px 6px 22px;
+}
+
+.discount__form-btn {
+    background: #6c5fbc;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f7f8fa;
+    padding: 15px 25px;
+    border-radius: 11px;
+}

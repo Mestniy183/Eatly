@@ -1,0 +1,14 @@
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'variables.css';
+@import 'base.css';
+@import 'blocks/header.css';
+@import 'blocks/hero.css';
+@import 'blocks/stats.css';
+@import 'blocks/quality.css';
+@import 'blocks/restaurants.css';
+@import 'blocks/dishes.css';
+@import 'blocks/purshases.css';
+@import 'blocks/reviews.css';
+@import 'blocks/discount.css';
+@import 'blocks/footer.css';

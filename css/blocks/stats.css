@@ -1,0 +1,33 @@
+.stats {
+    background-image: url(../../img/stats/stats-bg.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 49px 0;
+}
+.container {
+}
+.stats__list {
+    display: flex;
+    margin: 0 auto;
+}
+.stats__item {
+    border-right: 1px solid #c5c5c5;
+    padding: 0 66px;
+}
+.stats__item:last-child {
+border-right: none;
+}
+.stats__number {
+    font-weight: 700;
+font-size: 43px;
+line-height: 125%;
+text-align: center;
+color: #fff;
+}
+.stats__desc {
+    font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #c5bfed;
+}

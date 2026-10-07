@@ -1,0 +1,120 @@
+.dishes {
+    padding: 100px 0 120px;
+}
+
+.container {}
+
+.dishes__wrapper {
+    border-bottom: 1px solid #cbcbcb;;
+}
+
+.dishes__title {
+    margin-bottom: 76px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57%;
+    color: #323142;
+    text-align: center;
+}
+
+.dishes__title--purple {
+    color: #6c5fbc;
+}
+
+.dishes__list {
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.dishes__item {
+    padding: 37px 20px 31px;
+    position: relative;
+    border: 1.44px solid #f4f4f6;
+    border-radius: 35px;
+    box-shadow: 7px 82px 41px 0 rgba(229, 229, 229, 0.7);
+    background: #fff;
+}
+
+.dishes__item-img {
+    height: 186px;
+}
+
+.restaurants__item-type {}
+
+.item-type--healthy {}
+
+.dishes__item-title {
+    margin-bottom: 10px;
+}
+
+.dishes__item-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 13px;
+}
+
+.dishes__item-time {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 133%;
+    color: #8e97a6;
+}
+
+.dishes__item-raiting {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 133%;
+    color: #8e97a6;
+}
+
+.dishes__star {
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 22px;
+}
+
+.dishes__item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishes__item-price {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 156%;
+    color: #323142;
+}
+
+.dishes__item-price--small {
+    font-size: 18px;
+    color: #8e97a6;
+}
+
+.dishes__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 43px;
+    height: 39px;
+    background: #323142;
+}
+
+.dishes__favourite {
+    position: absolute;
+    top: 24px;
+    right: 22px;
+}
+
+.item-type--trending {}
+
+.slider-btn {}
+
+.estaurants__btns-svg {}
