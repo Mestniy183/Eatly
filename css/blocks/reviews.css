@@ -32,11 +32,24 @@
 }
 
 .reviews__item {
+    position: relative;
     min-width: 528px;
     background: white;
     border-radius: 20px;
     padding: 38px 43px;
     box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+}
+
+.reviews__item:first-child::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/revievs/revievs-svg.svg);
+    background-repeat: no-repeat;
+    top: 51px;
+    right: 49px;
+    width: 59px;
+    height: 44px;
+    background-size: contain;
 }
 
 .reviews__item-description {
@@ -94,10 +107,39 @@
 }
 
 
-.reviews__item-star {}
-
-.reviews__box-content {}
-
-.reviews__box-description {}
-
-.reviews__box-stars {}
+@media(max-width: 1200px) {
+    .reviews__title {
+        font-size: 31px;
+        margin-bottom: 56px;
+    }
+    .reviews__title--purple {
+        font-size: 31px;
+    }
+    .reviews__item {
+        min-width: 375px;
+        padding: 27px 30px;
+    }
+    .reviews {
+        padding: 82px 0 129px;
+    }
+    .reviews__item-name {
+        font-size: 14px;
+    }
+    .reviews__item-text {
+        font-size: 11px;
+    }
+    .reviews__item-description {
+        font-size: 12px;
+        margin-bottom: 27px;
+    }
+    .reviews__item-stars {
+        width: 16px;
+        height: 16px;
+    }
+    .reviews__item:first-child::before {
+        width: 41px;
+        height: 31px;
+        top: 36px;
+        right: 35px;
+    }
+}

@@ -40,6 +40,7 @@
 }
 
 .purshases__left-item {
+    position: relative;
     display: flex;
     gap: 19px;
     border-radius: 12px;
@@ -53,6 +54,7 @@
     flex-direction: column;
     gap: 5px;
     width: 100%;
+    justify-content: center;
 }
 
 .purshases__item-title {
@@ -82,6 +84,9 @@
     line-height: 140%;
     color: #acadb9;
     text-align: right;
+    position: absolute;
+    right: 17px;
+    bottom: 10px;
 }
 
 .purshases__graph {
@@ -189,7 +194,7 @@
 
 .purshases__graph-about {}
 
-.purshases__graph__item-title {
+.purshases__graph-item-title {
     font-weight: 800;
     font-size: 18px;
     line-height: 150%;
@@ -221,4 +226,63 @@
 
 .purshases__graph-item--orange .purshases__graph-icon {
     background: #f2fdf6;
+}
+
+@media(max-width: 1200px) {
+    .purshases__title {
+        font-size: 36px;
+        max-width: 398px;
+    }
+    .purshases__graph {
+        max-width: 380px;
+    }
+    .purshases__graph-title {
+        font-size: 20px;
+    }
+    .purshases__graph-select {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+    .purshases__graph-item-title {
+        font-size: 13px;
+    }
+    .purshases__graph-text {
+        font-size: 11px;
+    }
+    .purshases__graph-price {
+        font-size: 15px;
+    }
+    .purshases__item-title {
+        font-size: 13px;
+    }
+    .purshases__left-text {
+        font-size: 8px;
+    }
+     .purshases__left-text--red {
+        font-size: 8px;
+    }
+    .purshases__item-time {
+        font-size: 9px;
+    }
+    .purshases__graph {
+        padding: 32px 27px;
+    }
+    .purshases__left-item {
+        padding: 3px 12px;
+    }
+    .purshases__left-list {
+        max-width: 245px;
+        gap: 11px;
+    }
+    .purshases__graph-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .purshases__wrapper {
+         padding: 71px 0 85px;
+    }
+    .purshases__item-time {
+        right: 12px;
+        bottom: 7px;
+    }
 }

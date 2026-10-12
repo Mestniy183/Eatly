@@ -45,7 +45,7 @@ ol {
 
 .container {
     max-width: 1440px;
-    padding: 0 96px;
+    padding: 0 clamp(30px, -14.00px + 7.64vw, 96px);
     margin: 0 auto;
 }
 
@@ -72,7 +72,6 @@ button {
 .item-type--supreme {
      border-radius: 5px;
     padding: 3px 8px 2px 9px;
-    margin-bottom: 1px;
     font-weight: 400;
     display: inline-block;
     font-size: 11px;
@@ -104,4 +103,17 @@ button {
     letter-spacing: -0.01em;
     color: #acadb9;
     align-items: center;
+}
+
+@media(max-width: 1200px) {
+    .item-type--healthy,
+.item-type--trending,
+.item-type--supreme {
+    
+    font-size: 8px;
+    margin-bottom: 5px;
+}
+.slider-btn {
+    font-size: 14px;
+}
 }

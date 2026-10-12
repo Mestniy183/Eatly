@@ -61,3 +61,19 @@
     width: 21px;
     height: 21px;
 }
+
+@media(max-width: 1200px) {
+    .footer {
+        padding: 68px 0 57px;
+    }
+    .footer__item-link {
+        font-size: 12px;
+    }
+    .footer__copyright {
+        font-size: 12px;
+    }
+    .footer__social-icon {
+        width: 15px;
+        height: 15px;
+    }
+}

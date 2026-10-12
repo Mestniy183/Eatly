@@ -45,14 +45,13 @@
     max-width: 440px;
     box-shadow: 0 7px 45px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
-    padding: 7px 6px 7px 0;
+    padding: 7px 6px 7px 21px;
 }
 
 .discount__input {
     min-width: 0;
     border: none;
     flex: 1;
-    padding: 6px 7px 6px 22px;
 }
 
 .discount__form-btn {
@@ -64,4 +63,33 @@
     color: #f7f8fa;
     padding: 15px 25px;
     border-radius: 11px;
+}
+
+@media(max-width: 1200px) {
+    .discount__title {
+        font-size: 49px;
+    }
+    .discount__wrapper::after {
+        background-image: url(../../img/discount/img-mobile.png);
+        width: 195px;
+        height: 196px;
+        top: 46px;
+        right: 51px;
+    }
+    .discount__wrapper {
+        padding: 26px 51px 43px 47px;
+    }
+    .discount__form {
+        max-width: 313px;
+    }
+    .discount__form-btn {
+        padding: 11px 17px;
+        font-size: 10px;
+    }
+    .discount__input {
+        font-size: 11px;
+    }
+    .discount {
+        margin-bottom: 154px;
+    }
 }

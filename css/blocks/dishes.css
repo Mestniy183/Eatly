@@ -1,11 +1,11 @@
 .dishes {
-    padding: 100px 0 120px;
 }
 
 .container {}
 
 .dishes__wrapper {
-    border-bottom: 1px solid #cbcbcb;;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 100px 0 120px;
 }
 
 .dishes__title {
@@ -47,6 +47,10 @@
 
 .dishes__item-title {
     margin-bottom: 10px;
+    font-weight: 600;
+font-size: 23px;
+line-height: 163%;
+color: #323142;
 }
 
 .dishes__item-info {
@@ -113,8 +117,47 @@
     right: 22px;
 }
 
-.item-type--trending {}
-
-.slider-btn {}
-
-.estaurants__btns-svg {}
+@media(max-width: 1200px) {
+    .dishes__item-img {
+    height: 131px;
+}
+.dishes__title {
+    font-size: 31px;
+}
+.dishes__list {
+    gap: 22px;
+}
+.dishes__item {
+    padding: 18px 8px 21px;
+    border-radius: 25px;
+}
+.dishes__add {
+    width: 32px;
+    height: 29px;
+}
+.dishes__item-title {
+    font-size: 16px;
+}
+.dishes__item-time {
+    font-size: 12px;
+}
+.dishes__star {
+    width: 17px;
+    height: 17px;
+}
+.dishes__item-raiting {
+    font-size: 12px;
+}
+.dishes__item-price {
+    font-size: 18px;
+}
+.dishes__item-price--small {
+    font-size: 13px;
+}
+.dishes__favourite {
+    width: 16px;
+    height: 13px;
+    top: 17px;
+    right: 15px;
+}
+}

@@ -8,6 +8,7 @@
 }
 .stats__list {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 .stats__item {
@@ -30,4 +31,19 @@ font-size: 14px;
 line-height: 150%;
 text-align: center;
 color: #c5bfed;
+}
+
+@media(max-width: 1200px) {
+    .stats__number {
+        font-size: 30px;
+    }
+    .stats__desc {
+        font-size: 10px;
+    }
+    .stats__item {
+        padding: 0 47px;
+    }
+    .stats {
+        padding: 34px 0;
+    }
 }

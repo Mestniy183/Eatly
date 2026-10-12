@@ -53,3 +53,26 @@ color: #606060;
 background: #6c5fbc;
 color: #f9f9f9;
 }
+
+@media(max-width: 1024px) {
+   .header__logo {
+    width: 79px;
+   }
+   .header__item-link {
+    font-size: 12px;
+   }
+   .header__list {
+    gap: 38px;
+   }
+   .header__btn {
+    font-size: 12px;
+    padding: 12px 19px;
+    border-radius: 13px;
+   }
+   .header__left {
+    gap: 73px;
+   }
+   .header__wrapper {
+    padding: 33px 0 18px;
+   }
+}
