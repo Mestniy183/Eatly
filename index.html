@@ -34,6 +34,12 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </div>
                 <div class="header__action">
 
                     <button class="header__btn">Login</button>
@@ -84,6 +90,7 @@
                 </div>
                 <div class="hero__right">
                     <picture>
+                        <source media="(max-width: 768px)" srcset="img/hero/hero-bg-mobile.png">
                         <source media="(max-width: 1024px)" srcset="img/hero/hero-laptop.png">
                         <img src="img/hero/hero-bg.png" alt="salad wits chickon">
                     </picture>
@@ -122,6 +129,7 @@
                 <div class="quality__wrapper">
                     <div class="quality__left">
                         <picture>
+                            <source media="(max-width: 768px)" srcset="img/quality/phone-mobile.png">
                             <source media="(max-width: 1200px)" srcset="img/quality/phone-laptop.png">
                             <img class="quality__left-img" src="img/quality/phone.jpg" alt="phone">
                         </picture>
@@ -172,7 +180,10 @@
 
                     <ul class="restaurants__list">
                         <li class="restaurants__item">
-                            <img class="restaurants__item-img" src="img/restaurants/img-1.jpg" alt="chicken">
+                            <picture>
+                                <img class="restaurants__item-img" src="img/restaurants/img-1.jpg" alt="chicken">
+                                <source media="(max-width: 768px)" srcset="img-mobile-1.jpg">
+                            </picture>
 
                             <div class="restaurants__item-content">
                                 <p class="restaurants__item-type item-type--healthy">
@@ -194,7 +205,10 @@
                             </div>
                         </li>
                         <li class="restaurants__item">
-                            <img class="restaurants__item-img" src="img/restaurants/img-2.jpg" alt="chicken">
+                            <picture>
+                                <img class="restaurants__item-img" src="img/restaurants/img-2.jpg" alt="chicken">
+                                <source media="(max-width: 768px)" srcset="img-moile-2.jpg">
+                            </picture>
 
                             <div class="restaurants__item-content">
                                 <p class="restaurants__item-type restaurants__item-type--red item-type--trending">
@@ -216,7 +230,11 @@
                             </div>
                         </li>
                         <li class="restaurants__item">
-                            <img class="restaurants__item-img" src="img/restaurants/img-1.jpg" alt="chicken">
+                            <picture>
+                                 <img class="restaurants__item-img" src="img/restaurants/img-1.jpg" alt="chicken">
+                                <source media="(max-width: 768px)" srcset="img-mobile-2.jpg">
+                            </picture>
+                           
 
                             <div class="restaurants__item-content">
                                 <p class="restaurants__item-type item-type--healthy">
@@ -263,7 +281,7 @@
                         <li class="dishes__item">
                             <picture>
                                 <img class="dishes__item-img" src="img/dishes/food-1.png" alt="food-1">
-                                <source media="(max-width: 1200px)" srcset="img/dishes/food-mobile-1.png">
+                                <source media="(max-width: 1200px)" srcset="img/dishes/food-laptop-1.png">
                             </picture>
                             
                             <p class="restaurants__item-type item-type--healthy">
@@ -315,7 +333,7 @@
                         <li class="dishes__item">
                             <picture>
                                 <img class="dishes__item-img" src="img/dishes/food-2.png" alt="food-2">
-                                <source media="(max-width: 1200px)" srcset="img/dishes/food-mobile-2.png">
+                                <source media="(max-width: 1200px)" srcset="img/dishes/food-laptop-2.png">
                             </picture>
                             <p class="restaurants__item-type item-type--trending">
                                 Healthy
@@ -366,7 +384,7 @@
                         <li class="dishes__item">
                             <picture>
                                 <img class="dishes__item-img" src="img/dishes/food-3.png" alt="food-3">
-                                <source media="(max-width: 1200px)" srcset="img/dishes/food-mobile-3.png">
+                                <source media="(max-width: 1200px)" srcset="img/dishes/food-laptop-3.png">
                             </picture>
                             <p class="dishes__item-type item-type--supreme">
                                 Supreme
@@ -417,7 +435,7 @@
                         <li class="dishes__item">
                             <picture>
                                 <img class="dishes__item-img" src="img/dishes/food-4.png" alt="food-4">
-                                <source media="(max-width: 1200px)" srcset="img/dishes/food-mobile-4.png">
+                                <source media="(max-width: 1200px)" srcset="img/dishes/food-laptop-4.png">
                             </picture>
                             <p class="restaurants__item-type item-type--trending">
                                 Healthy
@@ -468,7 +486,7 @@
                         <li class="dishes__item">
                             <picture>
                                 <img class="dishes__item-img" src="img/dishes/food-5.png" alt="food-5">
-                                <source media="(max-width: 1200px)" srcset="img/dishes/food-mobile-5.png">
+                                <source media="(max-width: 1200px)" srcset="img/dishes/food-laptop-5.png">
                             </picture>
                             <p class="restaurants__item-type item-type--healthy">
                                 Healthy

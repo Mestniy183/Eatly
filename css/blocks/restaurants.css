@@ -112,3 +112,33 @@
         padding: 7px 19px 12px 24px;
     }
 }
+
+@media(max-width: 1200px) {
+    .restaurants__title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .restaurants__title {
+        margin-bottom: 59px;
+    }
+    .restaurants__item-title {
+        font-size: 20px;
+    }
+    .restaurants__item-time {
+        font-size: 15px;
+    }
+    .restaurants__star {
+        width: 21px;
+        height: 21px;
+    }
+    .restaurants__list {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .restaurants__item {
+        max-width: 315px;
+    }
+}

@@ -49,9 +49,12 @@ text-transform: capitalize;
 color: #606060;
 }
 .header__btn--purple {
-  
 background: #6c5fbc;
 color: #f9f9f9;
+}
+
+.burger {
+    display: none;
 }
 
 @media(max-width: 1024px) {
@@ -75,4 +78,25 @@ color: #f9f9f9;
    .header__wrapper {
     padding: 33px 0 18px;
    }
+}
+
+@media(max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+    .header__action {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        width: 32px;
+        height: 22px;
+    }
+    .burger__line {
+        width: 32px;
+        height: 2px;
+        color:  #908f8f;
+    }
 }

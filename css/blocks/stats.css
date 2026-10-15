@@ -4,46 +4,91 @@
     align-items: center;
     padding: 49px 0;
 }
-.container {
-}
+
+.container {}
+
 .stats__list {
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+
 .stats__item {
     border-right: 1px solid #c5c5c5;
     padding: 0 66px;
 }
+
 .stats__item:last-child {
-border-right: none;
+    border: none;
 }
+
 .stats__number {
     font-weight: 700;
-font-size: 43px;
-line-height: 125%;
-text-align: center;
-color: #fff;
+    font-size: 43px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
 }
+
 .stats__desc {
     font-weight: 500;
-font-size: 14px;
-line-height: 150%;
-text-align: center;
-color: #c5bfed;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #c5bfed;
 }
 
 @media(max-width: 1200px) {
     .stats__number {
         font-size: 30px;
     }
+
     .stats__desc {
         font-size: 10px;
     }
+
     .stats__item {
         padding: 0 47px;
     }
+
     .stats {
         padding: 34px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .stats__list {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .stats {
+        padding: 99px 0 82px;
+    }
+
+    .stats__number {
+        font-size: 43px;
+    }
+
+    .stats__desc {
+        font-size: 14px;
+    }
+
+    .stats {
+        background-image: url(../../img/stats/bg-mobile.png);
+        background-position: center;
+        padding: 99px 0 83px;
+        background-size: cover;
+    }
+
+    .stats__item {
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 60px;
+    }
+
+    .stats__item:last-child {
+        padding-bottom: 0;
     }
 }

@@ -161,3 +161,9 @@ color: #323142;
     right: 15px;
 }
 }
+
+@media(max-width: 768px) {
+    .dishes__title {
+        font-size: 30px;
+    }
+}
