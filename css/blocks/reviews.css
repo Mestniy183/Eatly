@@ -143,3 +143,39 @@
         right: 35px;
     }
 }
+
+@media(max-width: 768px) {
+  .reviews {
+    padding: 90px 0 79px;
+  }  
+  .reviews__title {
+    font-size: 30px;
+  }
+  .reviews__title--purple {
+    font-size: 30px;
+  }
+  .reviews__item-name {
+    font-size: 12px;
+  }
+  .reviews__item-text {
+    font-size: 9px;
+  }
+  .reviews__item-description {
+    font-size: 10px;
+    margin-bottom: 23px;
+  }
+  .reviews__item-avatar {
+    width: 41px;
+    height: 41px;
+  }
+  .reviews__item-star {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media(max-width: 576px) {
+    .reviews__item {
+        min-width: 315px;
+    }
+}

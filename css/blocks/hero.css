@@ -1,7 +1,8 @@
 .main {}
 
 .hero {
-    margin-bottom: 85px;
+    padding-top: 119px;
+    padding-bottom: 85px;
 }
 
 .container {}
@@ -208,5 +209,11 @@
         }
         .hero__description {
             max-width: none;
+        }
+    }
+
+    @media(max-width: 576px) {
+        .hero {
+            padding-top: 57px;
         }
     }

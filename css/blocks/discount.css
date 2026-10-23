@@ -93,3 +93,35 @@
         margin-bottom: 154px;
     }
 }
+
+
+@media(max-width: 768px) {
+    .discount__wrapper::after {
+        background-image: url(../../img/discount/mobile.png);
+    }
+    .discount__wrapper {
+        background-image: none;
+    }
+    .discount__title {
+        font-size: 41px;
+    }
+    .discount__input {
+        font-size: 10px;
+    }
+    .discount__form-btn {
+        font-size: 9px;
+        padding: 10px 16px;
+    } 
+}
+
+@media(max-width: 576px) {
+    .discount__wrapper::after {
+        width: 170px;
+        height: 170px;
+        top: 189px;
+        right: 73px;
+    }
+    .discount__wrapper {
+        padding: 36px 27px 95px;
+    }
+}

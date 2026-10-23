@@ -2,8 +2,8 @@
 
 .restaurants__wrapper {
     border-bottom: 1px solid #cbcbcb;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: clamp(84px, 55.56px + 3.70vw, 100px);
+    padding-bottom: clamp(66px, 5.56px + 7.87vw, 100px);
 }
 
 .restaurants__title {
@@ -140,5 +140,17 @@
     }
     .restaurants__item {
         max-width: 315px;
+    }
+    .restaurants__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 auto;
+        max-width: max-content;
+
+    }
+
+    .restaurants__list {
+        margin-bottom: 61px;
     }
 }

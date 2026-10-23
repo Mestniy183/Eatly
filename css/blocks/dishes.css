@@ -5,7 +5,7 @@
 
 .dishes__wrapper {
     border-bottom: 1px solid #cbcbcb;
-    padding: 100px 0 120px;
+    padding: clamp(84px, 55.56px + 3.70vw, 100px) 0 clamp(66px, -30.00px + 12.50vw, 120px);
 }
 
 .dishes__title {
@@ -165,5 +165,21 @@ color: #323142;
 @media(max-width: 768px) {
     .dishes__title {
         font-size: 30px;
+    }
+    .dishes__item:last-child {
+        display: none;
+    }
+    .dishes__list {
+        flex-wrap: wrap;
+    }
+    .dishes__item {
+        min-width: 147px;
+    }
+}
+
+@media(max-width: 576px) {
+    .dishes__item {
+        min-width: 0;
+        flex: 1 1 calc((100% - 22px) / 2);
     }
 }

@@ -17,6 +17,7 @@
 }
 .purshases__left {
     max-width: 560px;
+    position: relative;
 }
 
 .purshases__title {
@@ -284,5 +285,49 @@
     .purshases__item-time {
         right: 12px;
         bottom: 7px;
+    }
+}
+
+@media(max-width: 768px) {
+    .purshases__title {
+        font-size: 30px;
+    }
+    .purshases__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 101px;
+    }
+    .purshases__left::after {
+        content: '';
+        background-image: url(../../img/purshases/decor-mobile.svg);
+        background-repeat: no-repeat;
+        width: 57px;
+        height: 114px;
+        position: absolute;
+        bottom: -80px;
+        right: 75px;
+    }
+    .purshases__item-title {
+        font-size: 12px;
+
+    }
+    .purshases__left-text {
+        font-size: 7px;
+    }
+    .purshases__item-time {
+        font-size: 8px;
+    }
+    .purshases__graph-title {
+        font-size: 16px;
+    }
+    .purshases__graph-select {
+        font-size: 11px;
+        padding: 7px 11px;
+    }
+}
+
+@media(max-width: 576px) {
+    .purshases__left::after {
+        right: 0;
     }
 }
