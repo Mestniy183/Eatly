@@ -35,6 +35,8 @@
     border-radius: 35px;
     box-shadow: 7px 82px 41px 0 rgba(229, 229, 229, 0.7);
     background: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .dishes__item-img {
@@ -87,6 +89,7 @@ color: #323142;
 .dishes__item-content {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .dishes__item-price {
