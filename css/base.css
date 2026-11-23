@@ -76,6 +76,7 @@ button {
     display: inline-block;
     font-size: 11px;
     margin-bottom: 10px;
+    align-self: flex-start;
 }
 
 .item-type--healthy {
