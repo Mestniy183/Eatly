@@ -10,37 +10,37 @@
     gap: 30px;
 }
 
-.hero__left {}
+.hero__left {
+    max-width: 758px;
+}
 
 .hero__discount {
     margin-bottom: 143px;
-    padding: 30px 374px 29px 61px;
+    padding: 30px 61px 29px 61px;
     border-radius: 19px;
     position: relative;
-    width: 758px;
+    
     background-color: #6c5fbc;
-    ;
     background-image: url(../../img-menu/hero/bg-hero.png);
 }
 
 .hero__left-title {
     font-weight: 800;
-    font-size: 74px;
-    text-align: center;
+    font-size: clamp(30px, 14.51px + 4.13vw, 74px);
+    text-align: left;
     color: #f7f8fa;
 }
 
 .hero__left-title--purple {
     font-weight: 800;
-    font-size: 87px;
-    text-align: center;
+    font-size: clamp(35px, 16.69px + 4.88vw, 87px);
     color: #7c6fcd;
 }
 
 .hero__img {
     position: absolute;
-    top: 50px;
-    right: 37px;
+    top: clamp(50px, 39.44px + 2.82vw, 80px);
+    right: clamp(37px, 34.54px + 0.66vw, 44px);
 }
 
 .hero__search {
@@ -63,7 +63,7 @@ padding: 20px 28px;
     outline: none;
     background: transparent;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(12px, 9.18px + 0.75vw, 20px);
     line-height: 117%;
     letter-spacing: -0.02em;
     color: #aaabba;
@@ -75,7 +75,7 @@ padding: 20px 28px;
 
 .hero__left-btn {
     font-weight: 500;
-    font-size: 19px;
+    font-size: clamp(12px, 9.54px + 0.66vw, 19px);
     text-align: center;
     box-shadow: 0 22px 48px 0 rgba(211, 209, 216, 0.25);
     padding: 21px 30px;
@@ -105,7 +105,7 @@ padding: 20px 28px;
 
 .hero__category-title {
     font-weight: 600;
-    font-size: 21px;
+    font-size: clamp(17px, 15.59px + 0.38vw, 21px);
     line-height: 135%;
     color: #323142;
     margin-bottom: 17px;
@@ -180,7 +180,7 @@ padding: 20px 28px;
 
 .hero__category-caption {
     font-weight: 500;
-    font-size: 11px;
+    font-size: clamp(9px, 8.30px + 0.19vw, 11px);
     text-align: center;
     color: inherit;
 }
@@ -191,7 +191,7 @@ padding: 20px 28px;
 
 .hero__sort-title {
     font-weight: 600;
-    font-size: 21px;
+    font-size: clamp(17px, 15.59px + 0.38vw, 21px);
     line-height: 135%;
     color: #323142;
     margin-bottom: 13px;
@@ -206,7 +206,7 @@ padding: 20px 28px;
 
 .hero__sort-text {
     font-weight: 500;
-    font-size: 15px;
+    font-size: clamp(12px, 10.94px + 0.28vw, 15px);
     line-height: 187%;
     color: #acadb9;
 }
@@ -222,7 +222,7 @@ padding: 20px 28px;
 
 .hero__price-title {
     font-weight: 600;
-    font-size: 22px;
+    font-size: clamp(17px, 15.59px + 0.38vw, 21px);
     line-height: 135%;
     color: #323142;
     margin-bottom: 18px;
@@ -266,7 +266,7 @@ padding: 20px 28px;
 
 .hero__price-item {
     font-weight: 500;
-    font-size: 10px;
+    font-size: clamp(8px, 7.30px + 0.19vw, 10px);
     line-height: 281%;
     color: #c2c3cb;
 }
@@ -275,8 +275,17 @@ padding: 20px 28px;
     border-radius: 14px;
     background: #6c5fbc;
     font-weight: 600;
-    font-size: 13px;
+    font-size: clamp(11px, 10.30px + 0.19vw, 13px);
     letter-spacing: -0.01em;
     color: #fff3eb;
     padding: 20px 136px;
+}
+
+@media(max-width: 1200px) {
+    .hero__wrapper {
+        gap: 80px;
+    }
+    .hero__discount {
+        margin-bottom: clamp(102px, -103.00px + 17.08vw, 143px);
+    }
 }
