@@ -16,7 +16,7 @@
 
 .hero__discount {
     margin-bottom: 143px;
-    padding: 30px 61px 29px 61px;
+    padding: clamp(13px, 7.01px + 1.60vw, 30px) clamp(13px, 7.01px + 1.60vw, 30px);
     border-radius: 19px;
     position: relative;
     
@@ -282,10 +282,49 @@ padding: 20px 28px;
 }
 
 @media(max-width: 1200px) {
+    .hero {
+        padding: 85px 0 16px;
+    }
     .hero__wrapper {
         gap: 80px;
     }
     .hero__discount {
         margin-bottom: clamp(102px, -103.00px + 17.08vw, 143px);
+    }
+    .hero__search-wrapper {
+        padding: 15px 28px;
+    }
+    .hero__left-btn {
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    .hero__wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero__left {
+        width: 100%;
+        max-width: none;
+        display: contents;
+    }
+    .hero__left-title {
+        max-width: 346px;
+    }
+    .hero__search {
+        order: 3;
+    }
+    .hero__left-title--purple {
+        display: block;
+    }
+    .hero__right {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 768px) {
+    .hero__discount {
+
     }
 }

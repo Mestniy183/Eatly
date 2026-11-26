@@ -1,45 +1,64 @@
 .faq {
-    padding: 196px 0 174px;
+    padding: clamp(92px, 55.38px + 9.77vw, 196px) 0 clamp(95px, 67.18px + 7.42vw, 174px);
 }
-.container {
-}
+
+.container {}
+
 .faq__title {
+    position: relative;
     font-weight: 600;
-font-size: 45px;
-line-height: 120%;
-text-align: center;
-color: #323142;
-max-width: 408px;
-margin: 0 auto 90px;
+    font-size: clamp(23px, 15.25px + 2.07vw, 45px);
+    line-height: 120%;
+    text-align: center;
+    color: #323142;
+    max-width: clamp(210px, 140.28px + 18.59vw, 408px);
+    margin: 0 auto clamp(67px, 58.90px + 2.16vw, 90px);
 }
+.faq__title::after {
+    content: "";
+    background-image: url(../../img-menu/faq/decor.svg);
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 39px;
+    position: absolute;
+    top: -50px;
+    right: -41px;
+}
+
 .faq__title--purple {
     color: #6c5fbc;
+    display: block;
 }
+
 .faq__box {
     display: flex;
     gap: 29px;
     flex-direction: column;
 }
+
 .faq__item {
     border-bottom: 1px solid #ADADAD;
 }
+
 .faq__question {
-    padding-bottom: 15px;
+    padding-bottom: clamp(7px, 4.18px + 0.75vw, 15px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     list-style: none;
 }
+
 .faq__question-title {
     font-weight: 600;
-font-size: 23px;
-line-height: 253%;
-color: #323142;
+    font-size: clamp(12px, 8.13px + 1.03vw, 23px);
+    line-height: 253%;
+    color: #323142;
 }
+
 .faq__icon {
-    width: 30px;
-    height: 30px;
+    width: clamp(16px, 11.07px + 1.31vw, 30px);
+    height: clamp(16px, 11.07px + 1.31vw, 30px);
     background: #6C5FBC;
     border-radius: 100%;
     position: relative;
@@ -63,9 +82,9 @@ color: #323142;
 }
 
 .faq__icon::after {
-width: 1px;
-height: 10px;
-transform: translate(-50%, -50%);
+    width: 1px;
+    height: 10px;
+    transform: translate(-50%, -50%);
 }
 
 .faq__answer {
@@ -77,4 +96,13 @@ transform: translate(-50%, -50%);
 .faq__item[open] .faq__icon::after {
     transform: translate(-50%, -50%) rotate(90deg);
     opacity: 0;
+}
+
+@media(max-width: 1200px) {
+    .faq__title::after {
+    width: 29px;
+    height: 28px;
+    top: -30px;
+    right: -30px;
+}
 }

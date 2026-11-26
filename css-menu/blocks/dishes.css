@@ -18,7 +18,7 @@
    
     font-weight: 600;
     font-size: 24px;
-line-height: 73%;
+line-height: 120%;
     color: #323142;
     text-align: center;
 }
@@ -191,55 +191,21 @@ color: #323142;
         min-width: 0;
         flex: 1 1 calc((100% - 22px) / 2);
     }
-}.dishes {
-}
-.container {
-}
-.dishes__wrapper {
-}
-.dishes__title {
-}
-.dishes__title--purple {
-}
-.dishes__list {
-    display: flex;
-    gap: 31px;
-}
-.dishes__item {
-}
-.dishes__item-img {
-}
-.restaurants__item-type {
-}
-.item-type--healthy {
-}
-.dishes__item-title {
-}
-.dishes__item-info {
-}
-.dishes__item-time {
-}
-.dishes__item-raiting {
-}
-.dishes__star {
-}
-.dishes__item-content {
-}
-.dishes__item-price {
-}
-.dishes__item-price--small {
-}
-.dishes__add {
-}
-.dishes__favourite {
-}
-.item-type--trending {
-}
-.dishes__item-type {
-}
-.item-type--supreme {
-}
-.slider-btn {
-}
-.estaurants__btns-svg {
+    .dishes__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .dishes__btn {
+        order: 3;
+        margin-top: 61px;
+    }
+    .dishes__box {
+         display: contents;
+    }
+    .dishes__title--purple {
+        display: block;
+    }
+    .dishes__title {
+        margin-bottom: 61px;
+    }
 }

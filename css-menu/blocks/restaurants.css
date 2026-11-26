@@ -16,7 +16,7 @@
 .restaurants__title {
     font-weight: 600;
     font-size: 35px;
-line-height: 73%;
+line-height: 120%;
     color: #323142;
     text-align: center;
 }
@@ -125,9 +125,7 @@ line-height: 73%;
 }
 
 @media(max-width: 768px) {
-    .restaurants__title {
-        margin-bottom: 59px;
-    }
+
     .restaurants__item-title {
         font-size: 20px;
     }
@@ -154,8 +152,29 @@ line-height: 73%;
         max-width: max-content;
 
     }
+}
 
-    .restaurants__list {
+@media(max-width: 576px) {
+    .restaurants__box {
+        display: contents;
+    }
+    .restaurants__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .restaurants__box-btn {
+        order: 3;
+        margin-top: 61px;
+    }
+    .restaurants__title--purple {
+        display: block;
+    }
+    .restaurants__title {
         margin-bottom: 61px;
     }
+    .restaurants__item {
+        max-width: none;
+        width: 100%;
+    }
 }
+
